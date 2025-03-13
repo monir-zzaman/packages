@@ -35,6 +35,10 @@ apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
 android {
     compileSdk flutter.compileSdkVersion
 
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_21
+        targetCompatibility JavaVersion.VERSION_21
+    }
 
     defaultConfig {
         applicationId "io.flutter.plugins.googlemapsexample"
